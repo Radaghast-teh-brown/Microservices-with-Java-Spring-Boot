@@ -19,7 +19,7 @@ public class AddressResponse {
         return this.addressId;
     }
     public String getStreet() {
-        return this.street;
+        return this.city;
     }
     public String getCity() {
         return this.city;
