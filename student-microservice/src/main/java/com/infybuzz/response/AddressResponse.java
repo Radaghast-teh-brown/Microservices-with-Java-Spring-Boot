@@ -1,6 +1,5 @@
 package com.infybuzz.response;
 
-import com.infybuzz.entity.Address;
 
 public class AddressResponse {
 
@@ -8,11 +7,6 @@ public class AddressResponse {
     public String street;
     public String city;
 
-    public AddressResponse(Address address) {
-        this.addressId = address.getId();
-        this.street = address.getStreet();
-        this.city = address.getCity();
-    }
 
 
     public long getAddressId() {
