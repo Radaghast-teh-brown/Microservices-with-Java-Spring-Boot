@@ -4,16 +4,15 @@ import com.infybuzz.entity.Address;
 import com.infybuzz.repository.AddressRepository;
 import com.infybuzz.request.CreateAddressRequest;
 import com.infybuzz.response.AddressResponse;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.logging.Logger;
-
 @Service
 public class AddressService {
 
-    Logger logger = (Logger) LoggerFactory.getLogger(AddressService.class);
+    Logger logger =  LoggerFactory.getLogger(AddressService.class);
 
     @Autowired
     AddressRepository addressRepository;
